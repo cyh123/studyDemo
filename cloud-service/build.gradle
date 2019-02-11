@@ -1,0 +1,9 @@
+dependencies {
+    compileOnly('org.projectlombok:lombok')
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-dependencies', version: 'Finchley.RELEASE', ext: 'pom'
+
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+
+    compile group: 'com.google.guava', name: 'guava', version: '18.0-rc2'
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}

@@ -1,0 +1,6 @@
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp', version: '2.0.0.RELEASE'
+    compile('org.springframework.boot:spring-boot-starter')
+    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}

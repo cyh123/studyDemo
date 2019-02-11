@@ -1,0 +1,38 @@
+rootProject.name = 'demo'
+
+include(':database')
+project(':database').projectDir = new File('./database')
+
+include(':mybatis')
+project(':mybatis').projectDir = new File('./database/mybatis')
+
+include(':hibernate')
+project(':hibernate').projectDir = new File('./database/hibernate')
+
+include(':rabbitmqdemo')
+project(':rabbitmqdemo').projectDir = new File('./rabbitmqdemo')
+
+include ':consumer'
+project(':consumer').projectDir=new File('./rabbitmqdemo/consumer')
+
+include ':producer'
+project(':producer').projectDir=new File('./rabbitmqdemo/producer')
+
+
+include(':cloud-service')
+project(':cloud-service').projectDir = new File('./cloud-service')
+
+include ':register-center'
+project(":register-center").projectDir=new File("./cloud-service/register-center")
+
+include ':service-zuul'
+project(":service-zuul").projectDir=new File("./cloud-service/service-zuul")
+
+include ':service-provider'
+project(":service-provider").projectDir=new File("./cloud-service/service-provider")
+
+include ':service-consumer'
+project(":service-consumer").projectDir=new File("./cloud-service/service-consumer")
+
+include ':service-zipkin'
+project(":service-zipkin").projectDir=new File("./cloud-service/service-zipkin")

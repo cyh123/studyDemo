@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':cloud-service')
+    compile('org.springframework.boot:spring-boot-starter')
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka-server', version: '1.4.4.RELEASE'
+}

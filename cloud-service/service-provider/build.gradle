@@ -1,0 +1,12 @@
+dependencies {
+    compile project(':cloud-service')
+    compile('org.springframework.boot:spring-boot-starter')
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-consul-discovery', version: '1.3.4.RELEASE'
+
+    // consul配置中心使用
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-consul-bus', version: '1.3.4.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-consul-config', version: '1.3.4.RELEASE'
+
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version: '1.3.3.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-sleuth-zipkin', version: '1.3.3.RELEASE'
+}
