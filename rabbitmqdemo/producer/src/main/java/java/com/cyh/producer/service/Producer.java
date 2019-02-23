@@ -58,7 +58,7 @@ public class Producer {
 
     @Scheduled(fixedRate = 1000L)
     public void produce() throws IOException {
-        channel.basicPublish(EXCHANGE_NAME, ROUTING_KEY, MessageProperties.PERSISTENT_TEXT_PLAIN, "this is a test".getBytes());
+        channel.basicPublish(EXCHANGE_NAME, ROUTING_KEY, true, MessageProperties.PERSISTENT_TEXT_PLAIN, "this is a test".getBytes());
         logger.info("finish to send message");
     }
 }
